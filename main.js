@@ -1,9 +1,9 @@
-  document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const $ = document.querySelector.bind(document); 
   const _form = $("#myForm");
   const _btnUndo = $("#btn-undo");
   const _btnRedo = $("#btn-redo");
-  const _btnReset = $("#btn-reset");
+  const _btnClear = $("#btn-clear");
   const _txtPreview = $("#txt-preview");
   const _content = $("#content");
   const _color = $("#color");
@@ -27,9 +27,8 @@
     });
   });
   
-  _btnReset.addEventListener("click", function(event) {
-    init();
-    undoRedoHandler.reset();
+  _btnClear.addEventListener("click", function(event) {
+    undoRedoHandler.clear();
   });
   
   _btnUndo.addEventListener("click", function(event) {
