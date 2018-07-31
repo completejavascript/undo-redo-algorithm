@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+.app {
+  padding: 15px;
+}
+.app-preview-text {
+  text-transform: uppercase;
+}
+.app-control input {
+  padding: 5px 10px;
+}
+.app-control-item {
+  display: block;
+  margin-bottom: 10px;
+}
+.app-undo-redo button {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
