@@ -27,8 +27,12 @@ class UndoRedoHandler {
     }
   }
   
-  reset() {
-    this._undoStack.length = 0;
-    this._redoStack.length = 0;
+  clear() {
+    if (this._redoStack.length >= 1) {
+      let state = this._redoStack.pop();
+      this._undoStack.length = 0;
+      this._redoStack.length = 0; 
+      this._redoStack.push(state);
+    }
   }
 }
