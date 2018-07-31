@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Implement a simple Undo-Redo algorithms</title>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="app-preview">
+      <h1 class="app-preview-text" id="txt-preview">Undo-Redo</h1>
+      <hr>
+    </div>
+    <form class="app-control" id="myForm">
+      <label class="app-control-item" for="content">Content:</label>
+      <input class="app-control-item" type="text" id="content" value="undo-redo" />
+      <label class="app-control-item" for="color">Color:</label>
+      <input class="app-control-item" type="text" id="color" value="#222222" />
+      <input class="app-control-item" type="submit" value="Apply"/>
+      <hr>
+    </form>
+    <div class="app-undo-redo">
+      <button id="btn-undo">Undo</button>
+      <button id="btn-redo">Redo</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+  </div>
+
+  <script src="./UndoRedoHandler.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
